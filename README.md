@@ -22,7 +22,7 @@ Yousri Bouzaien (500731321)
 Rood
 
 #### Je focus:
-Ik wil voor allebei gaan (kies uit responsive óf surface plane)
+Responsive (kies uit responsive óf surface plane)
 
 </details>
 
@@ -128,10 +128,9 @@ alles in orde.
 Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+Hamburger menu klapt niet open met gebruik van TAB.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
+Dit kan worden opgelost door van het hamburger menu icoontje ook een link te maken.
 
 #### Titel tweede bevinding.
 Hier korte omschrijving (met indien nodig een afbeelding)
@@ -153,35 +152,17 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 </details>
 
 
-
-
-
 ## Voortgang 3 (week 4)
 
 <details>
 <summary>uitwerken voor 3e voortgang</summary>
 
+De enigste vraag die ik had was of je een andere video mocht gebruiken.
+mijn medestudenten hadden geen vragen.
+
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De site is zo goed als af alleen nog de puntjes op de I en nog even kijken naar de responsiveness.
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -195,12 +176,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Over het algemeen ging alles goed, ik kom er alleen niet uit hoe ik het hamburger menu weg krijg als ik op een desktop scherm kom.
+<img src="images/hamburgerfout.png" width="375px" alt="omschrijving van de pagina">
 
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
-
+<img src="images/screen1.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/screen2.png" width="375px" alt="omschrijving van de pagina">
 </details>
 
 
@@ -212,10 +195,12 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+Alle afbeeldingen zijn screenshots van de apple website.
+
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. https://www.w3schools.com/tags/att_video_autoplay.asp
+3. https://developer.mozilla.org/en-US/docs/Web/CSS/position
+4. https://flaviocopes.com/rotate-image/
 
 </details>
