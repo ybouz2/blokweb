@@ -1,0 +1,579 @@
+/* CSS Document */
+*, *::after, *::before {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* De margin en padding resetten voor de hele body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+/* STYLING HEADER */
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+header nav {
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header nav img {
+  width: 28px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+header nav h1 img {
+  width: 22px;
+}
+
+/*  Menu niet zichtbaar maken */
+header nav ul {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  padding: 32px;
+  background: black;
+  top: 35px;
+  left: 0;
+  right: 0;
+  transform: translateY(-650px);
+  transition: 0.5s;
+}
+
+/* Dit word pas zichtbaar als het hamburger menu word uitgeklapt */
+header nav ul.toon {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  padding: 32px;
+  background: black;
+  top: 32px;
+  left: 0;
+  right: 0;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+
+header nav.toon {
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #000;
+}
+
+header nav ul li {
+  border-bottom: solid 0.5px;
+  line-height: 48px;
+}
+
+header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  background-color: #E34140;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 48px;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  line-height: 1.5;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+}
+
+header section p {
+  width: 70%;
+}
+
+header section p a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* STYLING MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  padding: 10px;
+  height: 516px;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+main section, img {
+  width: 100%;
+  text-align: center;
+}
+
+main a {
+  text-decoration: none;
+  color: #0066cc;
+  letter-spacing: inherit;
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 300;
+}
+
+main section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: .002em;
+}
+
+main section p {
+  font-size: 19px;
+  line-height: 1.21053;
+  margin-top: -10px;
+  letter-spacing: 0.012em;
+  font-weight: 400;
+}
+
+main section {
+  background-color: #F9EBF4;
+}
+
+main section:first-of-type h2 {
+  padding: 25px;
+  margin-top: -10px;
+  margin-bottom: -15px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main section:first-of-type img {
+  width: 80%;
+  margin-top: 50px;
+}
+
+main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3) {
+  visibility: hidden;
+}
+
+main section:first-of-type img:nth-of-type(2) {
+  animation: rotation 4s ease-in-out;
+}
+
+main section:nth-of-type(2) {
+  background-color: #FCFCFE;
+  overflow: hidden;
+}
+
+main section:nth-of-type(2) h2 {
+  margin-top: 30px;
+}
+
+main section:nth-of-type(2) img {
+  width: 80%;
+  margin-top: 25px;
+  bottom: 0;
+}
+
+main section ul {
+  display: flex;
+  justify-content: center;
+}
+
+main section li {
+  list-style: none;
+  margin-right: 37px;
+}
+
+/* AFBEELDING BRON: apple.com */
+main section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/iphone13.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #35283C;
+  color: #FFFFFF;
+}
+
+main section:nth-of-type(3) p {
+  color: #FEC2EB;
+  margin-top: -20px;
+  margin-bottom: -5px;
+}
+
+main section:nth-of-type(3) a:hover {
+  animation: pulse 1.5s infinite ease-in-out alternate;
+}
+
+/* AFBEELDING BRON: apple.com */
+main section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #000000;
+  background-image: url(../images/appletv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main section:nth-of-type(4) a {
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+main a:hover {
+  animation: pulse 1.5s infinite ease-in-out alternate;
+}
+
+/* STYLING FOOTER */
+footer {
+  background-color: #f5f5f7;
+  padding: 16px;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  color: #6e6e73;
+}
+
+footer section a {
+  font-size: 12px;
+  margin-right: 32px;
+  text-decoration: none;
+  color: #6e6e73;
+}
+
+/* STYLING PAGINA 2 */
+header section.header {
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+header section.header {
+  background-color: #f3f3f6;
+  color: #000000;
+}
+
+header section.header a {
+  color: #0066cc;
+}
+
+header section.header p {
+  width: 90%;
+}
+
+section.page2 {
+  height: auto;
+  background-color: #FFFFFF;
+  margin-top: 34px;
+}
+
+section.page2 h2 {
+  padding: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+section.page2 p {
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.037em;
+  padding: 24px;
+  color: #86868b;
+}
+
+section.video {
+  position: relative;
+}
+
+section.video video {
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
+}
+
+section.video h2 {
+  position: absolute;
+  bottom: 150px;
+  font-size: 18px;
+  line-height: 1.1666666667;
+  font-weight: 700;
+  text-align: left;
+  color: #FFFFFF;
+  width: 50%;
+  left: 75px;
+}
+
+section.video a {
+  position: absolute;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 8px 16px;
+  border-radius: 980px;
+}
+
+section.video a:first-of-type {
+  left: 75px;
+  bottom: 100px;
+  background-color: white;
+  color: #000000;
+}
+
+section.video a:nth-of-type(2) {
+  left: 200px;
+  bottom: 100px;
+  border: 1px solid #FFFFFF;
+  border-radius: 980px;
+  color: #FFFFFF;
+}
+
+main section.video {
+  height: 516px;
+  background-color: #000;
+}
+
+main section.form {
+  background-image: none;
+  background-color: #FFF;
+}
+
+main section.form ul {
+  flex-direction: column;
+}
+
+main section.form ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+main section.form label {
+  color: #000;
+}
+
+main section.form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background: #d3d3d3;
+  width: 300px;
+}
+
+main section.form h2 {
+  color: #000;
+  margin-top: -20px;
+}
+
+main section.form p {
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* RESPONSIVE MAKEN WEBSITE */
+@media (min-width: 400px) {
+  main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  main section:first-of-type img {
+    width: 65%;
+  }
+
+  main section:nth-of-type(2) img {
+    width: 40%;
+  }
+
+  main section:nth-of-type(4) {
+    background-color: #110e11;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  section.page2 h2 {
+    width: 60%;
+    font-size: 84px;
+  }
+
+  section.page2 p {
+    font-size: 24px;
+    width: 60%;
+  }
+}
+
+@media (min-width: 750px) {
+  header nav {
+    justify-content: flex-start;
+  }
+
+  header nav img {
+    visibility: hidden;
+  }
+
+  header nav h1 img {
+    visibility: visible;
+    padding-left: 182px;
+  }
+
+  /*  Menu niet zichtbaar maken */
+  header nav ul {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: left;
+    padding: 32px;
+    background: none;
+    top: -50px;
+    left: 280px;
+    right: 0;
+    transform: translateY(0);
+  }
+
+  header nav ul li {
+    margin-right: 30px;
+    border-bottom: none;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+
+  main section:first-of-type, main section:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3) {
+    visibility: visible;
+  }
+
+  main section h2 {
+    font-size: 48px;
+  }
+
+  main section p {
+    font-size: 32px;
+  }
+
+  main section a {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section:first-of-type img {
+    width: 25%;
+  }
+
+  main section:nth-of-type(2) img {
+    width: 30%;
+  }
+
+  main section:nth-of-type(3) {
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/iphone132.png);
+    background-position: bottom;
+  }
+
+  main section:nth-of-type(3) h2 {
+    margin-top: 30px;
+  }
+
+  main section:nth-of-type(3) p {
+    margin-bottom: 30px;
+  }
+
+  main section:nth-of-type(4) {
+    background-image: url(../images/shrink.png);
+  }
+
+  section.page2 h2 {
+    width: 60%;
+    font-size: 84px;
+  }
+
+  section.page2 p {
+    font-size: 24px;
+    width: 60%;
+  }
+
+  main section.form {
+    background-image: none;
+    background-color: #FFF;
+  }
+}
+
+/* INSTELLINGEN VOOR ANIMATIES */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+}
