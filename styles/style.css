@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+overflow: scroll;
 }
 
 
@@ -147,6 +148,9 @@ main a {
   font-weight: 300;
 }
 
+
+
+
 main section h2 {
   font-size: 32px;
   font-weight: 500;
@@ -166,15 +170,28 @@ main section {
   background-color: #F9EBF4;
 }
 
+
 main section:first-of-type h2 {
   padding: 25px;
   margin-top: -10px;
   margin-bottom: -15px;
 }
 
+div{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 main section:first-of-type img {
+  width: 80%;
   margin-top: 50px;
-  width: 90%;
+}
+ main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3)  {
+  visibility: hidden;
+
+}
+main section:first-of-type img:nth-of-type(2) {
+
   animation: rotation 4s ease-in-out;
 }
 
@@ -224,6 +241,9 @@ main section:nth-of-type(3) p {
   margin-bottom: -5px;
 }
 
+main section:nth-of-type(3) a:hover{
+  animation: pulse 1.5s infinite ease-in-out alternate;
+}
  /* AFBEELDING BRON: apple.com */
 
 main section:nth-of-type(4) {
@@ -237,11 +257,19 @@ main section:nth-of-type(4) {
   background-position: center;
 }
 
+
+
+
 main section:nth-of-type(4) a {
   margin-bottom: 30px;
   color: #FFFFFF;
 }
 
+
+main a:hover{
+  animation: pulse 1.5s infinite ease-in-out alternate;
+
+}
 
 
 
@@ -361,13 +389,55 @@ section.video a:nth-of-type(2) {
   color: #FFFFFF;
 }
 
+main section.video{
+  height: 516px;
+  background-color: #000;
+}
+
+main section.form{
+  background-image: none;
+  background-color: #FFF;
+}
+main section.form ul{
+  flex-direction: column;
+
+}
+
+main section.form ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+
+}
+main section.form label{
+  color: #000;
+
+}
+
+main section.form input{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background: #d3d3d3;
+  width: 300px;
+}
+
+main section.form h2{
+  color: #000;
+  margin-top: -20px;
+}
+
+main section.form p{
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+}
 
 
 /* RESPONSIVE MAKEN WEBSITE */
 
 @media (min-width: 400px) {
-
-
 
 
   main section:first-of-type {
@@ -378,7 +448,7 @@ section.video a:nth-of-type(2) {
   }
 
   main section:first-of-type img {
-    width: 45%;
+    width: 65%;
   }
 
   main section:nth-of-type(2) img {
@@ -405,9 +475,70 @@ section.video a:nth-of-type(2) {
     width: 60%;
 
 }
+
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
+
+
+  header nav {
+    justify-content: flex-start;
+
+  }
+
+  header nav img {
+  visibility: hidden;
+  }
+
+  header nav h1 img {
+  visibility: visible;
+  padding-left: 182px;
+  }
+
+   /*  Menu niet zichtbaar maken */
+  header nav ul {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: left;
+    padding: 32px;
+    background: none;
+    top: -50px;
+    left: 280px;
+    right: 0;
+    transform: translateY(0);
+
+  }
+header nav ul li{
+  margin-right: 30px;
+  border-bottom:  none;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+
+  main {
+    display: grid;
+    grid-template-columns: 50% ;
+
+
+  }
+
+  main section:first-of-type, main section:nth-of-type(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+  }
+
+  main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3)  {
+   visibility: visible;
+
+  }
 
   main section h2 {
     font-size: 48px;
@@ -437,6 +568,28 @@ section.video a:nth-of-type(2) {
 
   }
 
+  main section:nth-of-type(3) {
+
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/iphone132.png);
+
+    background-position: bottom;
+
+  }
+
+  main section:nth-of-type(3) h2{
+  margin-top: 30px;
+  }
+
+  main section:nth-of-type(3) p{
+  margin-bottom: 30px;
+  }
+
+  main section:nth-of-type(4) {
+background-image: url(../images/shrink.png);
+
+  }
 
   section.page2 h2 {
     width: 60%;
@@ -445,14 +598,20 @@ section.video a:nth-of-type(2) {
 
   section.page2 p {
     font-size: 24px;
-    width: 60%;
+    width: 60%;}
 
+    main section.form{
+      background-image: none;
+      background-color: #FFF;
+    }
 }
-}
 
 
 
- /* ROTATIE INSTELLINGEN VOOR ANIMATIE AFBEELDING */
+
+
+
+ /* INSTELLINGEN VOOR ANIMATIES */
 
   @keyframes rotation {
     from {
@@ -464,3 +623,8 @@ section.video a:nth-of-type(2) {
     }
 
 }
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }}
