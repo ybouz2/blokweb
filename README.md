@@ -142,10 +142,10 @@ Hamburger menu klapt niet open met gebruik van TAB.
 Dit kan worden opgelost door van het hamburger menu icoontje ook een link te maken.
 
 #### Afbeeldingen.
-Hier korte omschrijving (met indien nodig een afbeelding)
+
 Afbeeldingen die in CSS als achtergrond worden gebruikt worden niet gelezen door een screenreader.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
 De adbeelding in html plaatsen.
 
 
