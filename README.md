@@ -124,6 +124,15 @@ alles in orde.
 <details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
+Tijdens het testen met de screenreader kwam ik erachter dat als je afbeeldingen in css zet om als achtergrond te gebruiken zoals bij het kopje iPhone 13 en bij Apple TV dat de screenreader dit niet voorleest. Verder las hij alles perfect voor. Ook met de tab knop om door de linkjes heen te gaan ging alles goed.
+
+Verdere bevindingen:
+- Het gebruiken van een screenreader is niet altijd even makkelijk
+- Alt tekst bij afbeeldingen is belangrijk voor screenreaders.
+- Je kan een hamburger menu niet openen met screenreaders.
+- Verder was alles makkelijk te gebruiken.
+
+
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
@@ -134,22 +143,11 @@ Dit kan worden opgelost door van het hamburger menu icoontje ook een link te mak
 
 #### Titel tweede bevinding.
 Hier korte omschrijving (met indien nodig een afbeelding)
+Afbeeldingen die in CSS als achtergrond worden gebruikt worden niet gelezen door een screenreader.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De adbeelding in html plaatsen.
 
-
-#### Titel volgende bevinding.
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding.
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-</details>
 
 
 ## Voortgang 3 (week 4)
