@@ -2,17 +2,15 @@
 *, *::after, *::before {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
- /* De margin en padding resetten voor de hele body */
+
+/* De margin en padding resetten voor de hele body */
 body {
   margin: 0;
   padding: 0;
-overflow: scroll;
+  overflow: scroll;
 }
 
-
-
- /* STYLING HEADER */
-
+/* STYLING HEADER */
 header {
   position: relative;
   width: 100%;
@@ -47,7 +45,7 @@ header nav h1 img {
   width: 22px;
 }
 
- /*  Menu niet zichtbaar maken */
+/*  Menu niet zichtbaar maken */
 header nav ul {
   position: absolute;
   list-style: none;
@@ -61,7 +59,7 @@ header nav ul {
   transition: 0.5s;
 }
 
- /* Dit word pas zichtbaar als het hamburger menu word uitgeklapt */
+/* Dit word pas zichtbaar als het hamburger menu word uitgeklapt */
 header nav ul.toon {
   position: absolute;
   list-style: none;
@@ -117,10 +115,7 @@ header section p a {
   color: #FFFFFF;
 }
 
-
-
- /* STYLING MAIN */
-
+/* STYLING MAIN */
 main {
   display: flex;
   flex-direction: column;
@@ -137,6 +132,7 @@ main section {
 main section, img {
   width: 100%;
   text-align: center;
+
 }
 
 main a {
@@ -148,8 +144,20 @@ main a {
   font-weight: 300;
 }
 
+main a:hover{
+  animation: pulse 1.5s infinite ease-in-out alternate;
+  padding: .5em;
+  border-radius: 15px;
+  color: #000;
+  background-color: #0066cc;
+  transition: 2s ease;
 
+}
 
+a:focus{
+  background-color: #000;
+  color: #fff
+}
 
 main section h2 {
   font-size: 32px;
@@ -170,28 +178,31 @@ main section {
   background-color: #F9EBF4;
 }
 
-
 main section:first-of-type h2 {
   padding: 25px;
   margin-top: -10px;
   margin-bottom: -15px;
+  animation: bounce-in-right 2s ease ;
 }
 
-div{
+
+
+div {
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
+
 main section:first-of-type img {
   width: 80%;
   margin-top: 50px;
 }
- main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3)  {
+
+main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3) {
   visibility: hidden;
-
 }
-main section:first-of-type img:nth-of-type(2) {
 
+main section:first-of-type img:nth-of-type(2) {
   animation: rotation 4s ease-in-out;
 }
 
@@ -208,6 +219,16 @@ main section:nth-of-type(2) img {
   width: 80%;
   margin-top: 25px;
   bottom: 0;
+
+}
+
+main section:nth-of-type(3):hover p{
+	backface-visibility: visible !important;
+	animation: flip 2s ease ;
+}
+
+main section:nth-of-type(2):hover img{
+  animation: shake 2s ease infinite;
 }
 
 main section ul {
@@ -220,8 +241,9 @@ main section li {
   margin-right: 37px;
 }
 
- /* AFBEELDING BRON: apple.com */
 
+
+/* AFBEELDING BRON: apple.com */
 main section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
@@ -230,7 +252,7 @@ main section:nth-of-type(3) {
   background-image: url(../images/iphone13.png);
   background-size: contain;
   background-repeat: no-repeat;
-    background-position: center;
+  background-position: center;
   background-color: #35283C;
   color: #FFFFFF;
 }
@@ -241,11 +263,9 @@ main section:nth-of-type(3) p {
   margin-bottom: -5px;
 }
 
-main section:nth-of-type(3) a:hover{
-  animation: pulse 1.5s infinite ease-in-out alternate;
-}
- /* AFBEELDING BRON: apple.com */
 
+
+/* AFBEELDING BRON: apple.com */
 main section:nth-of-type(4) {
   display: flex;
   flex-direction: column;
@@ -257,24 +277,16 @@ main section:nth-of-type(4) {
   background-position: center;
 }
 
-
-
-
 main section:nth-of-type(4) a {
   margin-bottom: 30px;
   color: #FFFFFF;
 }
 
-
-main a:hover{
+main a:hover {
   animation: pulse 1.5s infinite ease-in-out alternate;
-
 }
 
-
-
- /* STYLING FOOTER */
-
+/* STYLING FOOTER */
 footer {
   background-color: #f5f5f7;
   padding: 16px;
@@ -295,11 +307,7 @@ footer section a {
   color: #6e6e73;
 }
 
-
-
-
- /* STYLING PAGINA 2 */
-
+/* STYLING PAGINA 2 */
 header section.header {
   font-size: 12px;
   line-height: 1.3333733333;
@@ -328,7 +336,7 @@ section.page2 {
 
 section.page2 h2 {
   padding: 24px;
-  font-size: 44px;
+  font-size: 38px;
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: -0.2px;
@@ -389,33 +397,32 @@ section.video a:nth-of-type(2) {
   color: #FFFFFF;
 }
 
-main section.video{
+main section.video {
   height: 516px;
   background-color: #000;
 }
 
-main section.form{
+main section.form {
   background-image: none;
   background-color: #FFF;
 }
-main section.form ul{
-  flex-direction: column;
 
+main section.form ul {
+  flex-direction: column;
 }
 
-main section.form ul li{
+main section.form ul li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-weight: bold;
-
 }
-main section.form label{
+
+main section.form label {
   color: #000;
-
 }
 
-main section.form input{
+main section.form input {
   margin-bottom: 20px;
   padding: 10px;
   border: none;
@@ -423,23 +430,39 @@ main section.form input{
   width: 300px;
 }
 
-main section.form h2{
+main section.form h2 {
   color: #000;
   margin-top: -20px;
 }
 
-main section.form p{
+main section.form p {
   color: #000;
   padding: 10px;
   font-size: 16px;
 }
 
+main section button{
+  width: 100px;
+  height: 25px;
+  border: none;
+}
+
+
+
+main section input:focus{
+  background-color: #7FFFD4;
+  }
+
+
+
+
+
+
+
+
 
 /* RESPONSIVE MAKEN WEBSITE */
-
-@media (min-width: 400px) {
-
-
+@media (min-width: 450px) {
   main section:first-of-type {
     display: flex;
     flex-direction: column;
@@ -455,14 +478,11 @@ main section.form p{
     width: 40%;
   }
 
-
   main section:nth-of-type(4) {
-
-  background-color: #110e11;
+    background-color: #110e11;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   section.page2 h2 {
@@ -473,29 +493,24 @@ main section.form p{
   section.page2 p {
     font-size: 24px;
     width: 60%;
-
-}
-
+  }
 }
 
 @media (min-width: 750px) {
-
-
   header nav {
     justify-content: flex-start;
-
   }
 
   header nav img {
-  visibility: hidden;
+    visibility: hidden;
   }
 
   header nav h1 img {
-  visibility: visible;
-  padding-left: 182px;
+    visibility: visible;
+    padding-left: 182px;
   }
 
-   /*  Menu niet zichtbaar maken */
+  /*  Menu niet zichtbaar maken */
   header nav ul {
     position: absolute;
     display: flex;
@@ -508,45 +523,40 @@ main section.form p{
     left: 280px;
     right: 0;
     transform: translateY(0);
-
   }
-header nav ul li{
-  margin-right: 30px;
-  border-bottom:  none;
-  font-weight: 100;
-  font-size: 14px;
-  text-align: center;
-  margin: auto;
-}
 
-
-
+  header nav ul li {
+    margin-right: 30px;
+    border-bottom: none;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+  }
 
   main {
     display: grid;
-    grid-template-columns: 50% ;
-
-
+    grid-template-columns: 50%;
   }
 
-  main section:first-of-type, main section:nth-of-type(4){
+  main section:first-of-type, main section:nth-of-type(4) {
     grid-column-start: 1;
     grid-column-end: 3;
-
   }
 
-  main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3)  {
-   visibility: visible;
-
+  main section:first-of-type img:first-of-type, main section:first-of-type img:nth-of-type(3) {
+    visibility: visible;
   }
 
   main section h2 {
     font-size: 48px;
   }
-  main section p{
+
+  main section p {
     font-size: 32px;
   }
-  main section a{
+
+  main section a {
     font-weight: 400;
     font-size: 24px;
   }
@@ -555,8 +565,6 @@ header nav ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
   }
 
   main section:first-of-type img {
@@ -565,30 +573,25 @@ header nav ul li{
 
   main section:nth-of-type(2) img {
     width: 30%;
-
   }
 
   main section:nth-of-type(3) {
-
     justify-content: flex-start;
     align-items: center;
     background-image: url(../images/iphone132.png);
-
     background-position: bottom;
-
   }
 
-  main section:nth-of-type(3) h2{
-  margin-top: 30px;
+  main section:nth-of-type(3) h2 {
+    margin-top: 30px;
   }
 
-  main section:nth-of-type(3) p{
-  margin-bottom: 30px;
+  main section:nth-of-type(3) p {
+    margin-bottom: 30px;
   }
 
   main section:nth-of-type(4) {
-background-image: url(../images/shrink.png);
-
+    background-image: url(../images/shrink.png);
   }
 
   section.page2 h2 {
@@ -598,33 +601,86 @@ background-image: url(../images/shrink.png);
 
   section.page2 p {
     font-size: 24px;
-    width: 60%;}
+    width: 60%;
+  }
 
-    main section.form{
-      background-image: none;
-      background-color: #FFF;
-    }
+  main section.form {
+    background-image: none;
+    background-color: #FFF;
+  }
 }
 
+/* INSTELLINGEN VOOR ANIMATIES */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
 
-
-
-
-
- /* INSTELLINGEN VOOR ANIMATIES */
-
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(359deg);
-    }
-
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 @keyframes pulse {
   from {
     transform: scale(0.9);
-  }}
+  }
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.bounce-out {
+  animation: bounce-out 2s ease infinite;
+}
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
